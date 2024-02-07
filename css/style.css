@@ -191,13 +191,100 @@ header .ham-burger.active span:nth-child(2) {
 /*Home section*/
 .home {
     height: 100vh;
-    background-image: url('../images/home.jpg');
+    background-image: url('../images/home_new.png');
     background-size: cover;
     padding: 15px;
     -webkit-display: flex;
     display: flex;
     position: relative;
 }
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home .popup{
+    background-color: #fff;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(105%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.home .popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+.home .popup h2{
+    font-size: 35px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+    animation: beatH2 1s ease infinite alternate;
+}
+
+.sale {
+    position: absolute;
+    display: inline-block;
+    background: orange;
+    color: black;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    margin: 34vh -7vw;
+    transform: rotate(-20deg) translate(-6%,-50%);
+    animation: beat 1s ease infinite alternate;
+    z-index: 2;
+}
+.sale span {
+    z-index: 2;
+}
+.sale:before, .sale:after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: inherit;
+    width: inherit;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(30deg);
+}
+.sale:after {
+    transform: rotate(60deg);
+}
+@keyframes beat {
+    from {
+        transform: rotate(-20deg) scale(1);
+    }
+    to {
+        transform: rotate(-20deg) scale(1.1);
+    }
+}
+
+@keyframes beatH2 {
+    from {
+        transform:  scale(1);
+    }
+    to {
+        transform:  scale(1.1);
+    }
+}
+
 
 .home .go-down {
     position: absolute;
@@ -1012,6 +1099,18 @@ header .ham-burger.active span:nth-child(2) {
     .start-today .content .box {
         padding: 15px;
     }
+    .schedule .content .timing .table {
+        table-layout: fixed;
+        width: 370px;
+    }
+
+    .schedule .content .timing .table thead {
+        font-size: small;
+    }
+
+    .schedule .content .timing .table tbody>tr>td {
+        font-size: 10px;
+    }
 }
 
 /*if screen width is less than or equal to 767px then*/
@@ -1091,6 +1190,19 @@ header .ham-burger.active span:nth-child(2) {
     .contact .content .box {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .schedule .content .timing .table {
+        table-layout: fixed;
+        width: 345px;
+    }
+
+    .schedule .content .timing .table thead {
+        font-size: small;
+    }
+
+    .schedule .content .timing .table tbody>tr>td {
+        font-size: 10px;
     }
 }
 
