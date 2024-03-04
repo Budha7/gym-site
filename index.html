@@ -610,17 +610,20 @@
                 <div class="text">
                     <h2>Contattaci</h2>
                 </div>
-                <form>
-                    <input type="text" placeholder="Nome e Cognome">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Telefono">
+                <form action="https://public.herotofu.com/v1/b37fbdc0-da56-11ee-8a16-2dace5ed8cab" method="post" accept-charset="UTF-8">
+                    <input type="text" id="name" placeholder="Nome e Cognome">
+                    <input type="text" id="email"placeholder="Email">
+                    <input type="text" id="phone" placeholder="Telefono">
                     <textarea placeholder="Messaggio"></textarea>
                     <div class="gdpr">
                         <span class="gdpr-text">
                             <input id="form-field-gdpr" type="checkbox" required="required" aria-required="true">
                             <label for="form-field-gdpr">Autorizzo il trattamento dei dati personali ai sensi del Regolamento Privacy Europeo n.679/2016 ("GDPR") e della normativa italiana applicabile.</label></span>
                     </div>
-                    <button type="submit">Send Message</button>
+                    <input type="submit" value="Invia" />
+                    <div style="text-indent:-99999px; white-space:nowrap; overflow:hidden; position:absolute;" aria-hidden="true">
+                        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+                    </div>
                 </form>
             </div>
             <div class="box text wow slideInRight">
