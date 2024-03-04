@@ -374,6 +374,12 @@ header .ham-burger.active span:nth-child(2) {
 
 .corsi .content .box .inner .img img {
     width: 100%;
+    object-fit: cover;
+}
+
+.ratioImg {
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 .corsi .content .box .inner .text {
