@@ -21,7 +21,7 @@ const onError = function(err) {
 };
 
 // The same code as in previous snippet...
-function sendEmail( data, onSuccess, onError) {
+function sendEmail( data) {
     $.ajax({
         type: "POST",
         url: "https://public.herotofu.com/v1/b37fbdc0-da56-11ee-8a16-2dace5ed8cab",
