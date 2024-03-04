@@ -19,19 +19,12 @@ const onError = function(err) {
     alert("Errore nell'invio dell'email, riprova più tardi");
     console.error(err);
 };
-/*
-sendEmail("https://public.herotofu.com/v1/b37fbdc0-da56-11ee-8a16-2dace5ed8cab", {
-    example_user: "user@example.com",
-    example_data: new Date().toISOString(),
-}, onSuccess, onError);
 
-
- */
 // The same code as in previous snippet...
-function sendEmail(endpointUrl, data, onSuccess, onError) {
+function sendEmail( data, onSuccess, onError) {
     $.ajax({
         type: "POST",
-        url: endpointUrl,
+        url: "https://public.herotofu.com/v1/b37fbdc0-da56-11ee-8a16-2dace5ed8cab",
         data: JSON.stringify(data),
         contentType: "application/json; charset=utf-8",
         dataType: "json",
