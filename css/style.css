@@ -191,7 +191,7 @@ header .ham-burger.active span:nth-child(2) {
 /*Home section*/
 .home {
     height: 100vh;
-    background-image: url('../images/home_new.png');
+    background-image: url('../images/home_pc.png');
     background-size: cover;
     padding: 15px;
     -webkit-display: flex;
@@ -341,7 +341,7 @@ header .ham-burger.active span:nth-child(2) {
 }
 
 .home h1 span {
-    color: #c11325;;
+    color: #ffdd00;;
 }
 
 
@@ -380,6 +380,17 @@ header .ham-burger.active span:nth-child(2) {
 .ratioImg {
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+.collapse span {
+    display: none;
+}
+.collapse.open span {
+    display: inline;
+}
+#toggle {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
 }
 
 .corsi .content .box .inner .text {
@@ -1216,6 +1227,11 @@ header .ham-burger.active span:nth-child(2) {
 @media (max-width: 550px) {
     .home h1 {
         font-size: 30px;
+    }
+
+    .home {
+        background-image: url('../images/home_phone.png');
+        background-size: cover;
     }
 }
 
